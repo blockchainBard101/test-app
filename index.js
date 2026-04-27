@@ -83,7 +83,7 @@ app.get('/health', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`${APP_NAME} v${VERSION} running on port ${PORT}`);
-    // throw new Error('Fatal: DATABASE_URL is not set')
-    console.log('Starting...');
+    // console.log(`${APP_NAME} v${VERSION} running on port ${PORT}`);
+    throw new Error('Fatal: DATABASE_URL is not set')
+    // console.log('Starting...');
 });
