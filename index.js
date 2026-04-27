@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 
-const APP_NAME = process.env.APP_NAME || 'unnamed';
-const OWNER = process.env.OWNER || 'anonymous';
-const VERSION = process.env.VERSION || '1.0.0';
-const PORT = process.env.PORT || 3000;
+const APP_NAME = process.env.APP_NAME;
+const OWNER = process.env.OWNER;
+const VERSION = process.env.VERSION;
+const PORT = process.env.PORT;
 
 app.get('/', (req, res) => {
     const html = `
